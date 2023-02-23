@@ -9,12 +9,15 @@
  */
 
 function fibonacci(n){
-    let a = 0
-    let b = 1
+    let a = 0;
+    let b = 1;
+    let c = 0;
     for (let i = 0; i < n; i++){
-        a = a + i
-        b = b + i
         console.log(a)
-        }
-    }
+        c = a + b
+        a = b
+        b = c
+    }   
+}   
+
 fibonacci(50)
